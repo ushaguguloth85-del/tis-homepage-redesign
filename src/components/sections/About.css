@@ -1,0 +1,160 @@
+.about-section {
+  padding: 120px 0;
+  background: #f7f5f0;
+}
+
+.about-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.section-label {
+  margin: 0 0 16px;
+  color: #b58b45;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-heading {
+  max-width: 800px;
+}
+
+.about-heading h2 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.about-heading h2 span {
+  display: block;
+  color: #6c7482;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 80px;
+  margin-top: 70px;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about-image-badge {
+  position: absolute;
+  right: -24px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+  border-radius: 50%;
+  background: #172033;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(23, 32, 51, 0.2);
+}
+
+.about-image-badge strong {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-image-badge span {
+  margin-top: 5px;
+  color: #e2c38d;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-intro {
+  margin: 0;
+  color: #172033;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+.about-text > p:not(.about-intro) {
+  margin: 25px 0 0;
+  color: #6c7482;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #172033;
+  color: #172033;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.about-link:hover {
+  gap: 15px;
+  color: #b58b45;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-container {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .about-heading h2 {
+    letter-spacing: -1.5px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .about-image {
+    height: 420px;
+  }
+
+  .about-image-badge {
+    right: 15px;
+    bottom: 15px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-intro {
+    font-size: 21px;
+  }
+}

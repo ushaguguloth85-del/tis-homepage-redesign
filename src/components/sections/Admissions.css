@@ -1,0 +1,235 @@
+.admissions-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+  background: #172033;
+  color: #ffffff;
+}
+
+.admissions-container {
+  position: relative;
+  z-index: 2;
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.admissions-content {
+  max-width: 680px;
+}
+
+.admissions-label {
+  color: #e2c38d;
+}
+
+.admissions-content h2 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.95;
+  letter-spacing: -3px;
+}
+
+.admissions-content h2 span {
+  display: block;
+  color: #e2c38d;
+}
+
+.admissions-description {
+  max-width: 600px;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.admissions-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.admissions-primary-button,
+.admissions-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.admissions-primary-button {
+  gap: 10px;
+  background: #e2c38d;
+  color: #172033;
+}
+
+.admissions-secondary-button {
+  gap: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.admissions-primary-button:hover,
+.admissions-secondary-button:hover {
+  transform: translateY(-3px);
+}
+
+.admissions-primary-button:hover {
+  background: #ffffff;
+}
+
+.admissions-secondary-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.admissions-decoration {
+  position: relative;
+  min-height: 430px;
+}
+
+.admissions-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(226, 195, 141, 0.35);
+}
+
+.admissions-circle-one {
+  top: 10px;
+  right: 30px;
+  width: 360px;
+  height: 360px;
+}
+
+.admissions-circle-two {
+  top: 65px;
+  right: 85px;
+  width: 250px;
+  height: 250px;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.admissions-card {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  width: 230px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+}
+
+.admissions-card span {
+  display: block;
+  margin-bottom: 35px;
+  color: #e2c38d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.admissions-card strong {
+  display: block;
+  font-size: 22px;
+}
+
+.admissions-card p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admissions-card-bottom {
+  top: auto;
+  right: 110px;
+  bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .admissions-section {
+    padding: 90px 0;
+  }
+
+  .admissions-container {
+    width: min(100% - 28px, 1200px);
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .admissions-decoration {
+    min-height: 360px;
+  }
+
+  .admissions-circle-one {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .admissions-circle-two {
+    right: calc(50% - 55px);
+  }
+
+  .admissions-card {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .admissions-card-bottom {
+    right: calc(50% - 90px);
+    transform: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .admissions-content h2 {
+    letter-spacing: -2px;
+  }
+
+  .admissions-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 280px;
+  }
+
+  .admissions-primary-button,
+  .admissions-secondary-button {
+    width: 100%;
+  }
+
+  .admissions-decoration {
+    min-height: 330px;
+  }
+
+  .admissions-circle-one {
+    width: 290px;
+    height: 290px;
+  }
+
+  .admissions-circle-two {
+    top: 45px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .admissions-card {
+    top: 55px;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .admissions-card-bottom {
+    right: 10px;
+    bottom: 0;
+  }
+}

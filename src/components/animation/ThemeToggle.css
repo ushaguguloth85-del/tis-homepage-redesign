@@ -1,0 +1,135 @@
+.theme-toggle {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(23, 32, 51, 0.15);
+  border-radius: 50%;
+  background: #ffffff;
+  color: #172033;
+  box-shadow: 0 10px 25px rgba(23, 32, 51, 0.12);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-3px);
+  background: #e2c38d;
+}
+
+body.dark-theme {
+  background: #101725;
+}
+
+body.dark-theme .navbar {
+  background: rgba(16, 23, 37, 0.94);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-theme .navbar-logo,
+body.dark-theme .navigation-link {
+  color: #ffffff;
+}
+
+body.dark-theme .mobile-menu-button {
+  color: #ffffff;
+}
+
+body.dark-theme .mobile-navigation {
+  background: #101725;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-theme .mobile-navigation-link {
+  color: #ffffff;
+}
+
+body.dark-theme .about-section,
+body.dark-theme .academics-section,
+body.dark-theme .contact-section {
+  background: #101725;
+}
+
+body.dark-theme .about-heading h2,
+body.dark-theme .academics-heading h2,
+body.dark-theme .campus-content h2,
+body.dark-theme .contact-heading h2 {
+  color: #ffffff;
+}
+
+body.dark-theme .about-text p,
+body.dark-theme .academics-heading-text,
+body.dark-theme .campus-intro,
+body.dark-theme .contact-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body.dark-theme .academic-card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: #172033;
+}
+
+body.dark-theme .academic-card h3 {
+  color: #ffffff;
+}
+
+body.dark-theme .academic-card p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body.dark-theme .contact-card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: #172033;
+  color: #ffffff;
+}
+
+body.dark-theme .contact-card span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-theme .campus-section {
+  background: #151d2d;
+}
+
+body.dark-theme .campus-feature {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-theme .campus-feature h3 {
+  color: #ffffff;
+}
+
+body.dark-theme .campus-feature p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body.dark-theme .campus-features {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-theme .campus-link {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+body.dark-theme .theme-toggle {
+  background: #172033;
+  color: #e2c38d;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 500px) {
+  .theme-toggle {
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+  }
+}
